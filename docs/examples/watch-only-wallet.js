@@ -33,7 +33,7 @@ const bcoin = require('../..');
   console.log('xpub to import:\n', xpub);
 
   // recommended to use hardware wallet to derive keys
-  // see github.com/bcoin-org/bledger
+  // see github.com/raptoracle/bledger
 
   // create watch only wallet
   // the wallet will generate lookahead

@@ -145,7 +145,7 @@ If enabled you should also enable `wallet-auth` and set `api-key`.
 
 These options must be saved in `wallet.conf`. They can also be passed as
 environment variables or command-line variables if they are preceeded with
-a `wallet-` prefix. (See [CHANGELOG.md](https://github.com/bcoin-org/bcoin/blob/master/CHANGELOG.md#configuration-changes))
+a `wallet-` prefix. (See [CHANGELOG.md](https://github.com/raptoracle/bcoin/blob/master/CHANGELOG.md#configuration-changes))
 
 For example, to run a bcoin and wallet node on a remote server that you can
 access from a local machine, you would launch bcoin with the command:
@@ -185,5 +185,5 @@ access from a local machine, you would launch bcoin with the command:
 
 ## Sample config files
 
-- Node https://github.com/bcoin-org/bcoin/blob/master/etc/sample.conf
-- Wallet https://github.com/bcoin-org/bcoin/blob/master/etc/sample.wallet.conf
+- Node https://github.com/raptoracle/bcoin/blob/master/etc/sample.conf
+- Wallet https://github.com/raptoracle/bcoin/blob/master/etc/sample.wallet.conf

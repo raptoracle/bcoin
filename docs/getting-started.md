@@ -36,7 +36,7 @@ gpg --recv-keys "<fingerprint>"
 ### Installing via Git
 
 ``` bash
-$ git clone https://github.com/bcoin-org/bcoin
+$ git clone https://github.com/raptoracle/bcoin
 $ cd bcoin
 ```
 
@@ -75,7 +75,7 @@ use of `npm`.
 
 To install `bcoin` globally and to your path:
 ```
-$ gpk install --global https://github.com/bcoin-org/bcoin
+$ gpk install --global https://github.com/raptoracle/bcoin
 ```
 
 To install `bcoin` as a dependency, you can create a new
@@ -86,7 +86,7 @@ $ gpk init
 
 And then add `bcoin` with:
 ```
-$ gpk install https://github.com/bcoin-org/bcoin
+$ gpk install https://github.com/raptoracle/bcoin
 ```
 The latest tagged version will be added to `package.json` and bcoin
 will be installed.
@@ -102,7 +102,7 @@ apt-get install build-essential python
 
 ### Installing via Docker
 
-Check [bcoin-docker](https://github.com/bcoin-org/bcoin-docker)
+Check [bcoin-docker](https://github.com/raptoracle/bcoin-docker)
 
 ### Installing on Windows
 
@@ -122,7 +122,7 @@ availability. For example, here is an example `package.json`:
 ```json
 {
   "dependencies": {
-    "bcoin": "git+https://github.com/bcoin-org/bcoin.git#semver:~2.0.0"
+    "bcoin": "git+https://github.com/raptoracle/bcoin.git#semver:~2.0.0"
   }
 }
 ```

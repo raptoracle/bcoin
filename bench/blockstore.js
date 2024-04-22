@@ -20,7 +20,7 @@
  *              instead of random, it is faster.
  *
  * Copyright (c) 2019, Braydon Fuller (MIT License).
- * https://github.com/bcoin-org/bcoin
+ * https://github.com/raptoracle/bcoin
  */
 
 'use strict';

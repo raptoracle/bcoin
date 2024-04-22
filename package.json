@@ -3,10 +3,10 @@
   "version": "2.2.0",
   "description": "Bitcoin bike-shed",
   "license": "MIT",
-  "repository": "git://github.com/bcoin-org/bcoin.git",
-  "homepage": "https://github.com/bcoin-org/bcoin",
+  "repository": "git://github.com/raptoracle/bcoin.git",
+  "homepage": "https://github.com/raptoracle/bcoin",
   "bugs": {
-    "url": "https://github.com/bcoin-org/bcoin/issues"
+    "url": "https://github.com/raptoracle/bcoin/issues"
   },
   "author": "Fedor Indutny <fedor@indutny.com>",
   "contributors": [

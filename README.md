@@ -22,7 +22,7 @@ used in production as the consensus backend and wallet system for
 ## Install
 
 ```
-$ git clone https://github.com/bcoin-org/bcoin
+$ git clone https://github.com/raptoracle/bcoin
 $ cd bcoin
 $ npm rebuild
 $ ./bin/bcoin

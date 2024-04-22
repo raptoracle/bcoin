@@ -225,7 +225,7 @@ that have many transactions.
 ### Testing changes
 
 - Switched to use a security-focused rewrite of `mocha` called
-  `bmocha`, for further details see: https://github.com/bcoin-org/bmocha
+  `bmocha`, for further details see: https://github.com/raptoracle/bmocha
 - Data has been updated to be in sync with other implementations
   around policy-only script validation.
 - Tests now cleanly close with all timers being cleared.
@@ -262,7 +262,7 @@ that have many transactions.
 
 - A new module for storing block data in files.
 - Use of `buffer-map` for storing hashes
-  (see https://github.com/bcoin-org/bcoin/issues/533).
+  (see https://github.com/raptoracle/bcoin/issues/533).
 - Use of `bsert` for assertions.
 - `SIGINT` handling will close the full node, spvnode and wallet.
 - Using the bcoin library in a REPL now has auto-completion by pressing tab.
@@ -581,7 +581,7 @@ Becomes this:
   `wallet auth`.
 - __config__ - `payout-address` option was changed to `coinbase-address`.
 - __node__ - Plugin system is now exposed.
-  See https://github.com/bcoin-org/bcoin/pull/156.
+  See https://github.com/raptoracle/bcoin/pull/156.
 - __config__ - The internal API for the config object has been rewritten
   and is now more reusable, particularly by node plugins.
 - __http/rpc__ - Both the HTTPBase and RPCBase objects now allow "mounting" by

@@ -16,3 +16,4 @@ bench/
 build/
 docs/
 test/
+.DS*

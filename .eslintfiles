@@ -11,3 +11,5 @@ migrate/
 scripts/
 test/
 docs/examples
+webpack.browser.js
+webpack.compat.js

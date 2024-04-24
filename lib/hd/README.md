@@ -11,7 +11,7 @@ BIP32
 
 ```
 Copyright (c) 2015-2016, Christopher Jeffrey (MIT License).
-https://github.com/raptoracle/bcoin
+https://github.com/bcoin-org/bcoin
 
 Copyright (c) 2013-2015 BitPay, Inc.
 

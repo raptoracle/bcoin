@@ -3,7 +3,7 @@
 
 const Logger = require('blgr');
 const FullNode = require('../../lib/node/fullnode');
-const Amount = require('../../lib/btc/amount');
+const Amount = require('../../lib/units/amount');
 const plugin = require('../../lib/wallet/plugin');
 const util = require('../../lib/utils/util');
 const ProxySocket = require('./proxysocket');

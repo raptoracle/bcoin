@@ -22,6 +22,7 @@ if (process.argv.indexOf('--version') !== -1
 const FullNode = require('../lib/node/fullnode');
 
 const node = new FullNode({
+  forceFlags: true, 
   file: true,
   argv: true,
   env: true,

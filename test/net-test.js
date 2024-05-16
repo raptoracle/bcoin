@@ -1078,7 +1078,7 @@ describe('Net', function() {
         peer.outbound = true;
 
         const pkt = new packets.VersionPacket({
-          services: 0 | services.NETWORK
+          services: 0 | services.NODE_NETWORK
         });
 
         let err = null;
@@ -1098,7 +1098,7 @@ describe('Net', function() {
         peer.outbound = true;
 
         const pkt = new packets.VersionPacket({
-          services: 0 | services.NETWORK | services.BLOOM,
+          services: 0 | services.NODE_NETWORK | services.NODE_BLOOM,
           version: common.BLOOM_VERSION - 1
         });
 
@@ -1119,7 +1119,7 @@ describe('Net', function() {
         peer.outbound = true;
 
         const pkt = new packets.VersionPacket({
-          services: 0 | services.NETWORK
+          services: 0 | services.NODE_NETWORK
         });
 
         let err = null;
@@ -1139,7 +1139,7 @@ describe('Net', function() {
         peer.outbound = true;
 
         const pkt = new packets.VersionPacket({
-          services: 0 | services.NETWORK | services.WITNESS
+          services: 0 | services.NODE_NETWORK | services.WITNESS
         });
 
         let called = false;
@@ -1569,21 +1569,21 @@ describe('Net', function() {
           new NetAddress({
             host: '5.19.5.127',
             port: 8334,
-            services: 0 | services.NETWORK | services.WITNESS,
+            services: 0 | services.NODE_NETWORK | services.WITNESS,
             time: 1558405603
           }),
           // Routable and missing services
           new NetAddress({
             host: '5.29.139.120',
             port: 8335,
-            services: 0 | services.NETWORK,
+            services: 0 | services.NODE_NETWORK,
             time: 1558405603
           }),
           // Not routable
           new NetAddress({
             host: '127.0.0.3',
             port: 8333,
-            services: 0 | services.NETWORK | services.WITNESS,
+            services: 0 | services.NODE_NETWORK | services.WITNESS,
             time: 1558405602
           })
         ];

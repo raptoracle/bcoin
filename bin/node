@@ -30,11 +30,9 @@ const node = new FullNode({
   logLevel: 'debug',
   logTimestamps: true,
   memory: false,
-  workers: false,
+  workers: true,
   listen: true,
   selfish: true,
-  headers: true,
-  compact: true,
   checkpoints: false,
   indexFull: false,
   loader: require

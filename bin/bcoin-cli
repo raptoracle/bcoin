@@ -7,10 +7,10 @@ const NodeClient = require('../lib/client/node');
 const Amount = require('../lib/units/amount');
 
 const ports = {
-  main: 8332,
-  testnet: 18332,
-  regtest: 48332,
-  simnet: 18556
+  main: 10250,
+  testnet: 10251,
+  regtest: 10252,
+  simnet: 10253
 };
 
 class CLI {

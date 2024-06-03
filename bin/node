@@ -34,7 +34,9 @@ const node = new FullNode({
   listen: true,
   selfish: true,
   checkpoints: false,
-  indexFull: false,
+  //indexFull: true,
+  indexTX: true,
+  indexAddress: true,
   loader: require
 });
 

@@ -37,6 +37,7 @@ const node = new FullNode({
   indexFull: true,
   slowMode: true,
   sporks: true,
+  persistentMempool: true,
   //indexTX: true,
   //indexAddress: true,
   loader: require

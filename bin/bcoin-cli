@@ -8,9 +8,9 @@ const Amount = require('../lib/units/amount');
 
 const ports = {
   main: 9998,
-  testnet: 10251,
-  regtest: 10252,
-  simnet: 10253
+  testnet: 9996,
+  devnet: 9994,
+  regtest: 9992
 };
 
 class CLI {

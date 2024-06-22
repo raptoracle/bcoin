@@ -7,9 +7,9 @@ const WalletClient = require('../lib/client/wallet');
 
 const ports = {
   main: 9997,
-  testnet: 10255,
-  regtest: 10256,
-  simnet: 10257
+  testnet: 9995,
+  devnet: 9993,
+  regtest: 9991
 };
 
 class CLI {

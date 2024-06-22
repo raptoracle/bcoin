@@ -33,7 +33,7 @@ const node = new FullNode({
   workers: true,
   listen: true,
   selfish: true,
-  checkpoints: false,
+  checkpoints: true,
   indexFull: true,
   slowMode: true,
   sporks: true,

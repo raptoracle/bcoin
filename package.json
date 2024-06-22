@@ -71,6 +71,7 @@
     "blgr",
     "blru",
     "blst",
+    "bmongo",
     "bmutex",
     "brq",
     "bs32",
@@ -95,6 +96,7 @@
   "bin": {
     "bcoin": "./bin/bcoin",
     "bcoin-node": "./bin/node",
+    "bcoin-mongo": "./bin/mongo",
     "bcoin-spvnode": "./bin/spvnode",
     "bwallet": "./bin/bwallet",
     "bcoin-cli": "./bin/bcoin-cli",

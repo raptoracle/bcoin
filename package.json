@@ -52,6 +52,7 @@
     "bweb": "github:raptoracle/bweb",
     "loady": "github:raptoracle/loady",
     "lodash": "^4.17.21",
+    "mongoose": "^8.4.3",
     "n64": "github:raptoracle/n64",
     "nan": "^2.19.0",
     "node-multi-hashing": "github:raptoracle/node-multi-hashing",

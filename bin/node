@@ -22,8 +22,8 @@ if (process.argv.indexOf('--version') !== -1
 const FullNode = require('../lib/node/fullnode');
 
 const node = new FullNode({
-  mongo: false,
-  mdbExclusive: false,
+  mongo: true,
+  dbHost: '192.168.1.73',
   file: true,
   argv: true,
   env: true,
@@ -31,25 +31,25 @@ const node = new FullNode({
   logConsole: true,
   logLevel: 'debug',
   logTimestamps: true,
-  memory: false,
+  memory: true,
   workers: true,
   listen: true,
   selfish: true,
-  checkpoints: true,
+  checkpoints: false,
   indexFull: true,
   slowMode: true,
   sporks: true,
   persistentMempool: true,
-  //indexTX: true,
-  //indexAddress: true,
+  indexTX: true,
+  indexAddress: true,
   loader: require
 });
 
 // Temporary hack
-if (!node.config.bool('no-wallet') && !node.has('walletdb')) {
-  const plugin = require('../lib/wallet/plugin');
-  node.use(plugin);
-}
+//if (!node.config.bool('no-wallet') && !node.has('walletdb')) {
+//  const plugin = require('../lib/wallet/plugin');
+//  node.use(plugin);
+//}
 
 process.on('unhandledRejection', (err, promise) => {
   throw err;

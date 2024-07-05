@@ -23,10 +23,10 @@ const FullNode = require('../lib/node/fullnode');
 const DB = require('bmongo');
 
 const node = new FullNode({
-  file: true,
+  file: false,
   argv: true,
   env: true,
-  logFile: true,
+  logFile: false,
   logConsole: true,
   logLevel: 'debug',
   logTimestamps: true,
@@ -34,11 +34,10 @@ const node = new FullNode({
   workers: true,
   listen: true,
   selfish: true,
-  checkpoints: true,
-  indexFull: true,
+  checkpoints: false,
+  indexFull: false,
   slowMode: true,
-  sporks: true,
-  persistentMempool: true,
+  sporks: false,
   //indexTX: true,
   //indexAddress: true,
   loader: require
@@ -50,10 +49,10 @@ const api = new DB({
 });
 
 // Temporary hack
-if (!node.config.bool('no-wallet') && !node.has('walletdb')) {
-  const plugin = require('../lib/wallet/plugin');
-  node.use(plugin);
-}
+//if (!node.config.bool('no-wallet') && !node.has('walletdb')) {
+//  const plugin = require('../lib/wallet/plugin');
+//  node.use(plugin);
+//}
 
 process.on('unhandledRejection', (err, promise) => {
   throw err;

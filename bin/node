@@ -24,10 +24,10 @@ const FullNode = require('../lib/node/fullnode');
 const node = new FullNode({
   mongo: true,
   dbHost: '192.168.1.73',
-  file: true,
+  file: false,
   argv: true,
   env: true,
-  logFile: true,
+  logFile: false,
   logConsole: true,
   logLevel: 'debug',
   logTimestamps: true,
@@ -36,12 +36,9 @@ const node = new FullNode({
   listen: true,
   selfish: true,
   checkpoints: false,
-  indexFull: true,
-  slowMode: true,
-  sporks: true,
-  persistentMempool: true,
-  indexTX: true,
-  indexAddress: true,
+  indexFull: false,
+  slowMode: false,
+  sporks: false,
   loader: require
 });
 

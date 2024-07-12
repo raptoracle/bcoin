@@ -26,7 +26,7 @@
     "bcfg": "github:raptoracle/bcfg",
     "bcrypto": "github:raptoracle/bcrypto",
     "bcurl": "github:raptoracle/bcurl",
-    "bdb": "github:raptoracle/bdb",
+    "bdb": "github:raptoracle/bdb#mongo",
     "bdns": "github:raptoracle/bdns",
     "bevent": "github:raptoracle/bevent",
     "bfile": "github:raptoracle/bfile",

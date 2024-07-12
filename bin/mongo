@@ -20,13 +20,14 @@ if (process.argv.indexOf('--version') !== -1
 }
 
 const FullNode = require('../lib/node/fullnode');
-const DB = require('bmongo');
 
 const node = new FullNode({
-  file: false,
+  db: 'external',
+  dbHost: '192.168.1.73',
+  file: true,
   argv: true,
   env: true,
-  logFile: false,
+  logFile: true,
   logConsole: true,
   logLevel: 'debug',
   logTimestamps: true,
@@ -38,21 +39,11 @@ const node = new FullNode({
   indexFull: false,
   slowMode: true,
   sporks: false,
+  persistentMempool: false,
   //indexTX: true,
   //indexAddress: true,
   loader: require
 });
-
-const api = new DB({
-  dbhost: '192.168.1.73',
-  dbname: 'bcoin-mongo'
-});
-
-// Temporary hack
-//if (!node.config.bool('no-wallet') && !node.has('walletdb')) {
-//  const plugin = require('../lib/wallet/plugin');
-//  node.use(plugin);
-//}
 
 process.on('unhandledRejection', (err, promise) => {
   throw err;
@@ -66,12 +57,7 @@ process.on('SIGINT', async () => {
   await node.ensure();
   await node.open();
   await node.connect();
-  await api.open();
   node.startSync();
-  node.on('connect', async (entry, block) => {
-    console.log('%s (%d) added to chain.', entry.rhash(), entry.height);
-    await api.saveBcoinBlock(entry, block);
-  });
 })().catch((err) => {
   console.error(err.stack);
   process.exit(1);
